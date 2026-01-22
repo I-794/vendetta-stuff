@@ -59,10 +59,10 @@ export async function execute(commandName: CommandName, ctx: CommandContext) {
     let content: string;
     switch (commandName) {
         case "spotify track":
-            content = `https://open.spotify.com/track/${track.id}`;
+            content = `https://play.spotify.com/track/${track.id}`;
             break;
         case "spotify album":
-            content = `https://open.spotify.com/album/${track.album.id}`;
+            content = `https://play.spotify.com/album/${track.album.id}`;
             break;
         case "spotify artists":
             content = track.artists.map((artist) => {
